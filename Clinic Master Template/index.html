@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meridian Health Clinic — Compassionate, modern healthcare for the whole family. Same-day appointments, trusted doctors, book online in minutes." />
+  <meta property="og:title" content="Meridian Health Clinic" />
+  <meta property="og:description" content="Modern healthcare for the whole family. Book your appointment online today." />
+  <meta property="og:type" content="website" />
+  <title>Meridian Health Clinic — Modern Care for the Whole Family</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- TOP UTILITY BAR -->
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__group">
+        <span class="topbar__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </span>
+        <span class="topbar__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Mon–Fri 8am–8pm · Sat 9am–4pm
+        </span>
+      </div>
+      <div class="topbar__group">
+        <span class="topbar__item topbar__item--emergency">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Emergency: <a href="tel:911">Call 911</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav nav--transparent" id="main-nav" data-transparent="true">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-mark">✚</div>
+        <div>
+          <div class="nav__logo-text">Meridian Health</div>
+          <div class="nav__logo-sub">Clinic</div>
+        </div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="doctors.html" class="nav__link">Doctors</a></li>
+        <li><a href="patient-resources.html" class="nav__link">Patient Resources</a></li>
+        <li><a href="health-tips.html" class="nav__link">Health Tips</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="tel:+1234567890" class="btn btn--secondary btn--sm">Call Us</a>
+        <a href="book-appointment.html" class="btn btn--primary btn--sm">Book Appointment</a>
+        <button class="nav__menu-btn" id="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+      <li><a href="doctors.html" class="mobile-nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="mobile-nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="mobile-nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      <li><a href="book-appointment.html" class="mobile-nav__link mobile-nav__link--cta">Book Appointment</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- =====================================================================
+         HERO
+         IMAGE: Unsplash "friendly doctor patient clinic bright" / "modern clinic reception"
+    ====================================================================== -->
+    <section class="hero">
+      <div class="hero__bg" style="overflow:hidden;">
+        <img src="https://picsum.photos/seed/clinic-hero/1920/1080" alt="Meridian Health Clinic care team" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+      </div>
+
+      <div class="hero__content">
+        <span class="hero__label animate-fade-up">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Accepting New Patients
+        </span>
+        <h1 class="hero__title animate-fade-up animate-fade-up--delay-1">
+          Healthcare That
+          <span>Puts You First.</span>
+        </h1>
+        <p class="hero__subtitle animate-fade-up animate-fade-up--delay-2">
+          From everyday check-ups to specialist care, our team delivers warm, expert
+          medicine for every member of your family. Book online in under two minutes.
+        </p>
+        <div class="hero__actions animate-fade-up animate-fade-up--delay-3">
+          <a href="book-appointment.html" class="btn btn--primary btn--lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book an Appointment
+          </a>
+          <a href="services.html" class="btn btn--ghost btn--lg">Explore Our Services</a>
+        </div>
+
+        <div class="hero__trust animate-fade-up animate-fade-up--delay-4">
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Same-day appointments
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Board-certified doctors
+          </span>
+          <span class="hero__trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Most insurance accepted
+          </span>
+        </div>
+      </div>
+
+      <!-- Info bar -->
+      <div class="info-bar" style="position:absolute;bottom:0;left:0;right:0;">
+        <div class="info-bar__inner">
+          <div class="info-bar__item"><div class="info-bar__dot"></div><span><strong>Open Today:</strong> 8:00am – 8:00pm</span></div>
+          <div class="info-bar__item"><div class="info-bar__dot"></div><span><strong>Walk-ins</strong> welcome before 6pm</span></div>
+          <div class="info-bar__item"><div class="info-bar__dot"></div><span><strong>100 Wellness Blvd,</strong> Your City</span></div>
+        </div>
+      </div>
+
+      <div class="hero__scroll"><div class="hero__scroll-line"></div><span>Scroll</span></div>
+    </section>
+
+    <!-- =====================================================================
+         QUICK ACTIONS — three primary patient paths
+    ====================================================================== -->
+    <section class="section section--warm" style="padding:64px 0;">
+      <div class="container">
+        <div class="grid grid-3 reveal">
+          <a href="book-appointment.html" class="service-card" style="text-decoration:none;">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3 class="service-card__title">Book an Appointment</h3>
+            <p class="service-card__desc">Choose your service, doctor, and time. Confirmed instantly — no phone tag.</p>
+            <span class="service-card__link">Start booking <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </a>
+
+          <a href="services.html#telemedicine" class="service-card" style="text-decoration:none;">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <h3 class="service-card__title">Virtual Visit</h3>
+            <p class="service-card__desc">See a doctor from home by secure video for common concerns and follow-ups.</p>
+            <span class="service-card__link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </a>
+
+          <a href="patient-resources.html" class="service-card" style="text-decoration:none;">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="service-card__title">Patient Resources</h3>
+            <p class="service-card__desc">Insurance, new-patient forms, what to bring, and answers to common questions.</p>
+            <span class="service-card__link">View resources <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         WELCOME / ABOUT TEASER
+    ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+          <div class="reveal" style="position:relative;height:480px;">
+            <div style="position:absolute;top:0;left:0;width:80%;height:380px;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(19,75,112,0.15);">
+              <img src="https://picsum.photos/seed/clinic-team/800/600" alt="Our care team" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <div style="position:absolute;bottom:0;right:0;width:55%;background:var(--color-accent);border-radius:20px;padding:28px;box-shadow:var(--shadow-accent);">
+              <div style="font-family:'Poppins',sans-serif;font-size:42px;font-weight:700;color:white;line-height:1;">15+</div>
+              <div style="font-size:14px;color:rgba(255,255,255,0.9);margin-top:4px;">Years Caring for<br>Our Community</div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <span class="section-header__label">Why Meridian</span>
+            <h2 style="margin-bottom:24px;">Modern Medicine,<br>Genuinely Personal Care</h2>
+            <p class="text-lead" style="margin-bottom:24px;">
+              We combine the latest medical technology with doctors who actually take the time
+              to listen. No rushed visits, no confusing jargon — just clear, kind care.
+            </p>
+            <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:32px;">
+              <div class="feature">
+                <div class="feature__icon"><svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                <div><div class="feature__title">Short wait times</div><div class="feature__desc">Most patients are seen within 15 minutes of their scheduled appointment.</div></div>
+              </div>
+              <div class="feature">
+                <div class="feature__icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+                <div><div class="feature__title">One team, all your needs</div><div class="feature__desc">Family medicine, pediatrics, specialists, labs and imaging under one roof.</div></div>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn--secondary">More About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SERVICES PREVIEW
+    ====================================================================== -->
+    <section class="section section--warm">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__label">What We Offer</span>
+          <h2 class="section-header__title">Comprehensive Care,<br>All in One Place</h2>
+          <p class="section-header__desc">From preventive check-ups to specialist treatment, find the care you need.</p>
+        </div>
+
+        <div class="grid grid-3 reveal">
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3 class="service-card__title">Family Medicine</h3>
+            <p class="service-card__desc">Routine check-ups, illness care, chronic condition management for all ages.</p>
+            <a href="services.html" class="service-card__link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 12h.01M15 12h.01M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><circle cx="12" cy="12" r="10"/></svg></div>
+            <h3 class="service-card__title">Pediatrics</h3>
+            <p class="service-card__desc">Gentle, expert care for infants, children, and teens — from wellness to vaccines.</p>
+            <a href="services.html" class="service-card__link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+            <h3 class="service-card__title">Cardiology</h3>
+            <p class="service-card__desc">Heart health screenings, diagnostics, and ongoing cardiovascular care.</p>
+            <a href="services.html" class="service-card__link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M10 2v7.31M14 9.3V2M8.5 2h7M14 9.3a6.5 6.5 0 11-4 0"/></svg></div>
+            <h3 class="service-card__title">Diagnostics & Lab</h3>
+            <p class="service-card__desc">On-site blood work, imaging, and rapid testing with fast, accurate results.</p>
+            <a href="services.html" class="service-card__link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+            <h3 class="service-card__title">Telemedicine</h3>
+            <p class="service-card__desc">Secure video visits for common concerns, prescriptions, and follow-ups.</p>
+            <a href="services.html#telemedicine" class="service-card__link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3 class="service-card__title">Urgent Care</h3>
+            <p class="service-card__desc">Same-day treatment for minor injuries, infections, and sudden illness.</p>
+            <a href="services.html" class="service-card__link">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:40px;" class="reveal">
+          <a href="services.html" class="btn btn--secondary btn--lg">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         BOOKING TEASER — signature feature
+    ====================================================================== -->
+    <section class="section" style="background:linear-gradient(160deg,#0C3450 0%,#134B70 100%);">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" class="reveal">
+          <div>
+            <span class="section-header__label" style="color:var(--color-accent-light);">Booking Made Simple</span>
+            <h2 style="color:white;margin-bottom:20px;">Book Your Visit<br>in 4 Easy Steps</h2>
+            <p style="color:rgba(255,255,255,0.7);font-size:18px;line-height:1.7;margin-bottom:32px;">
+              No waiting on hold. Choose what you need, pick a doctor and a time that works for you,
+              and get instant confirmation.
+            </p>
+            <div class="steps" style="margin-bottom:32px;">
+              <div class="step" style="border-color:rgba(255,255,255,0.1);">
+                <div class="step__number">1</div>
+                <div class="step__content"><div class="step__title" style="color:white;">Choose a service</div><div class="step__desc" style="color:rgba(255,255,255,0.6);">Tell us what kind of care you need.</div></div>
+              </div>
+              <div class="step" style="border-color:rgba(255,255,255,0.1);">
+                <div class="step__number">2</div>
+                <div class="step__content"><div class="step__title" style="color:white;">Pick a doctor</div><div class="step__desc" style="color:rgba(255,255,255,0.6);">Select your preferred provider, or let us match you.</div></div>
+              </div>
+              <div class="step" style="border-color:rgba(255,255,255,0.1);">
+                <div class="step__number">3</div>
+                <div class="step__content"><div class="step__title" style="color:white;">Select date & time</div><div class="step__desc" style="color:rgba(255,255,255,0.6);">See real availability and choose your slot.</div></div>
+              </div>
+              <div class="step" style="border-color:transparent;">
+                <div class="step__number">4</div>
+                <div class="step__content"><div class="step__title" style="color:white;">Confirm</div><div class="step__desc" style="color:rgba(255,255,255,0.6);">Get instant confirmation by email & SMS.</div></div>
+              </div>
+            </div>
+            <a href="book-appointment.html" class="btn btn--primary btn--lg">Book Now</a>
+          </div>
+
+          <div style="border-radius:24px;overflow:hidden;box-shadow:var(--shadow-xl);">
+            <img src="https://picsum.photos/seed/clinic-booking/700/720" alt="Patient booking an appointment" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         DOCTORS PREVIEW
+    ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:16px;" class="reveal">
+          <div>
+            <span class="section-header__label">Meet the Team</span>
+            <h2>Doctors You Can Trust</h2>
+          </div>
+          <a href="doctors.html" class="btn btn--secondary">View All Doctors</a>
+        </div>
+
+        <div class="grid grid-4 reveal">
+          <div class="doctor-card">
+            <div class="doctor-card__photo-wrap">
+              <img class="doctor-card__photo" src="https://picsum.photos/seed/doc-1/400/500" alt="Dr. Elena Reyes" />
+              <span class="doctor-card__badge">Family Medicine</span>
+            </div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Elena Reyes</div>
+              <div class="doctor-card__specialty">Family Physician</div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book</a>
+            </div>
+          </div>
+          <div class="doctor-card">
+            <div class="doctor-card__photo-wrap">
+              <img class="doctor-card__photo" src="https://picsum.photos/seed/doc-2/400/500" alt="Dr. Marcus Lin" />
+              <span class="doctor-card__badge">Pediatrics</span>
+            </div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Marcus Lin</div>
+              <div class="doctor-card__specialty">Pediatrician</div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book</a>
+            </div>
+          </div>
+          <div class="doctor-card">
+            <div class="doctor-card__photo-wrap">
+              <img class="doctor-card__photo" src="https://picsum.photos/seed/doc-3/400/500" alt="Dr. Aisha Bello" />
+              <span class="doctor-card__badge">Cardiology</span>
+            </div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Aisha Bello</div>
+              <div class="doctor-card__specialty">Cardiologist</div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book</a>
+            </div>
+          </div>
+          <div class="doctor-card">
+            <div class="doctor-card__photo-wrap">
+              <img class="doctor-card__photo" src="https://picsum.photos/seed/doc-4/400/500" alt="Dr. James Carter" />
+              <span class="doctor-card__badge">Dermatology</span>
+            </div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. James Carter</div>
+              <div class="doctor-card__specialty">Dermatologist</div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         STATS
+    ====================================================================== -->
+    <section class="section" style="background:var(--color-primary);padding:64px 0;">
+      <div class="container">
+        <div class="grid grid-4">
+          <div class="stat-card reveal"><div class="stat-card__number" data-count="25000" data-suffix="+">25000+</div><div class="stat-card__label" style="color:rgba(255,255,255,0.7);">Patients Cared For</div></div>
+          <div class="stat-card reveal"><div class="stat-card__number" data-count="40" data-suffix="+">40+</div><div class="stat-card__label" style="color:rgba(255,255,255,0.7);">Specialist Doctors</div></div>
+          <div class="stat-card reveal"><div class="stat-card__number" data-count="15" data-suffix="+">15+</div><div class="stat-card__label" style="color:rgba(255,255,255,0.7);">Years of Service</div></div>
+          <div class="stat-card reveal"><div class="stat-card__number" data-count="98" data-suffix="%">98%</div><div class="stat-card__label" style="color:rgba(255,255,255,0.7);">Patient Satisfaction</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         TESTIMONIALS
+    ====================================================================== -->
+    <section class="section section--warm">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__label">Patient Stories</span>
+          <h2 class="section-header__title">Trusted by Families<br>Across the Community</h2>
+        </div>
+        <div class="grid grid-3 reveal">
+          <div class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">"Booking online took two minutes and I was seen the same day. Dr. Reyes actually listened and explained everything clearly. Best clinic experience I've had."</p>
+            <div class="testimonial__author"><div class="testimonial__avatar-placeholder">🙂</div><div><div class="testimonial__name">Sarah M.</div><div class="testimonial__role">Family Medicine patient</div></div></div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">"The pediatric team is amazing with my kids. The waiting area is bright and calm, and we never wait long. Highly recommend to any parent."</p>
+            <div class="testimonial__author"><div class="testimonial__avatar-placeholder">🙂</div><div><div class="testimonial__name">David O.</div><div class="testimonial__role">Parent of two</div></div></div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">"I used the virtual visit for a follow-up and it was seamless. Professional, caring, and convenient. This is what modern healthcare should feel like."</p>
+            <div class="testimonial__author"><div class="testimonial__avatar-placeholder">🙂</div><div><div class="testimonial__name">Amaka T.</div><div class="testimonial__role">Telemedicine patient</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         INSURANCE
+    ====================================================================== -->
+    <section class="section" style="padding:64px 0;">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:32px;">
+          <span class="section-header__label" style="display:block;">Insurance & Billing</span>
+          <h3>We Accept Most Major Insurance Plans</h3>
+        </div>
+        <div class="logo-row reveal">
+          <div class="logo-row__item">BlueCross</div>
+          <div class="logo-row__item">Aetna</div>
+          <div class="logo-row__item">Cigna</div>
+          <div class="logo-row__item">UnitedHealth</div>
+          <div class="logo-row__item">Medicare</div>
+          <div class="logo-row__item">Humana</div>
+        </div>
+        <div class="text-center mt-8 reveal">
+          <a href="patient-resources.html#insurance" class="btn btn--secondary">Check Your Coverage</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         QUOTE / REASSURANCE BANNER
+    ====================================================================== -->
+    <div class="quote-banner">
+      <p class="quote-banner__text">"The greatest wealth is health.<br>We're here to help you protect yours."</p>
+      <p class="quote-banner__ref">— The Meridian Promise</p>
+    </div>
+
+    <!-- =====================================================================
+         HEALTH TIPS PREVIEW
+    ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:16px;" class="reveal">
+          <div>
+            <span class="section-header__label">From Our Blog</span>
+            <h2>Health Tips & News</h2>
+          </div>
+          <a href="health-tips.html" class="btn btn--secondary">Read All Articles</a>
+        </div>
+
+        <div class="grid grid-3 reveal">
+          <a href="health-tips.html" class="article-card" style="text-decoration:none;">
+            <div class="article-card__thumb"><img src="https://picsum.photos/seed/tip-1/600/340" alt="" /><span class="article-card__tag">Prevention</span></div>
+            <div class="article-card__body">
+              <div class="article-card__meta"><span>Apr 2, 2026</span><span>5 min read</span></div>
+              <div class="article-card__title">5 Simple Habits to Protect Your Heart</div>
+              <p class="article-card__excerpt">Small daily choices that add up to a healthier cardiovascular system over time.</p>
+            </div>
+          </a>
+          <a href="health-tips.html" class="article-card" style="text-decoration:none;">
+            <div class="article-card__thumb"><img src="https://picsum.photos/seed/tip-2/600/340" alt="" /><span class="article-card__tag">Family</span></div>
+            <div class="article-card__body">
+              <div class="article-card__meta"><span>Mar 28, 2026</span><span>4 min read</span></div>
+              <div class="article-card__title">When Should Your Child See a Doctor?</div>
+              <p class="article-card__excerpt">A practical guide for parents on common childhood symptoms and red flags.</p>
+            </div>
+          </a>
+          <a href="health-tips.html" class="article-card" style="text-decoration:none;">
+            <div class="article-card__thumb"><img src="https://picsum.photos/seed/tip-3/600/340" alt="" /><span class="article-card__tag">Wellness</span></div>
+            <div class="article-card__body">
+              <div class="article-card__meta"><span>Mar 20, 2026</span><span>6 min read</span></div>
+              <div class="article-card__title">Why Annual Check-ups Matter More Than You Think</div>
+              <p class="article-card__excerpt">Preventive screenings catch problems early — here's what to expect at yours.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         CTA STRIP
+    ====================================================================== -->
+    <section class="section" style="background:var(--color-accent);padding:72px 0;text-align:center;">
+      <div class="container">
+        <div class="reveal" style="max-width:620px;margin:0 auto;">
+          <h2 style="color:white;margin-bottom:16px;">Ready to Feel Better?</h2>
+          <p style="color:rgba(255,255,255,0.92);font-size:18px;line-height:1.7;margin-bottom:32px;">
+            Book your appointment today and experience healthcare that truly cares.
+          </p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="book-appointment.html" class="btn btn--white btn--lg">Book Appointment</a>
+            <a href="tel:+1234567890" class="btn btn--ghost btn--lg">Call +1 (234) 567-890</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo"><div class="footer__logo-mark">✚</div><span class="footer__logo-name">Meridian Health Clinic</span></a>
+          <p class="footer__tagline">Compassionate, modern healthcare for the whole family. Same-day appointments, trusted doctors, and care that puts you first.</p>
+          <div class="footer__hours">
+            <div class="footer__hours-row"><span>Monday – Friday</span><span>8:00am – 8:00pm</span></div>
+            <div class="footer__hours-row"><span>Saturday</span><span>9:00am – 4:00pm</span></div>
+            <div class="footer__hours-row"><span>Sunday</span><span>Closed</span></div>
+          </div>
+          <div class="footer__socials mt-6">
+            <a href="#" class="footer__social" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="footer__social" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+            <a href="#" class="footer__social" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 2a2 2 0 110 4 2 2 0 010-4z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html" class="footer__link">Family Medicine</a></li>
+            <li><a href="services.html" class="footer__link">Pediatrics</a></li>
+            <li><a href="services.html" class="footer__link">Cardiology</a></li>
+            <li><a href="services.html" class="footer__link">Diagnostics & Lab</a></li>
+            <li><a href="services.html" class="footer__link">Telemedicine</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">For Patients</h4>
+          <ul class="footer__links">
+            <li><a href="book-appointment.html" class="footer__link">Book Appointment</a></li>
+            <li><a href="patient-resources.html" class="footer__link">Patient Resources</a></li>
+            <li><a href="patient-resources.html#insurance" class="footer__link">Insurance & Billing</a></li>
+            <li><a href="patient-resources.html#faq" class="footer__link">FAQ</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Find Us</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link" style="cursor:default;color:rgba(255,255,255,0.6);">100 Wellness Boulevard<br>Suite 200, Your City, State</span></li>
+            <li style="margin-top:8px;"><a href="tel:+1234567890" class="footer__link">+1 (234) 567-890</a></li>
+            <li><a href="mailto:hello@meridianhealth.clinic" class="footer__link">hello@meridianhealth.clinic</a></li>
+            <li style="margin-top:12px;"><a href="https://maps.google.com" target="_blank" rel="noopener" class="footer__link" style="color:var(--color-accent-light);">Get Directions →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Meridian Health Clinic. All rights reserved.</p>
+        <div style="display:flex;gap:16px;"><a href="#" class="footer__link" style="font-size:13px;">Privacy</a><a href="#" class="footer__link" style="font-size:13px;">Terms</a><a href="#" class="footer__link" style="font-size:13px;">HIPAA Notice</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/[CLINIC_WHATSAPP]" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

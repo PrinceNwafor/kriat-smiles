@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet the board-certified doctors and specialists at Meridian Health Clinic. Search by name or specialty and book directly." />
+  <title>Our Doctors — Meridian Health Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="topbar"><div class="topbar__inner">
+    <div class="topbar__group">
+      <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+1234567890">+1 (234) 567-890</a></span>
+      <span class="topbar__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Mon–Fri 8am–8pm · Sat 9am–4pm</span>
+    </div>
+    <div class="topbar__group"><span class="topbar__item topbar__item--emergency"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Emergency: <a href="tel:911">Call 911</a></span></div>
+  </div></div>
+
+  <nav class="nav nav--scrolled" id="main-nav" data-transparent="false"><div class="nav__inner">
+    <a href="index.html" class="nav__logo"><div class="nav__logo-mark">✚</div><div><div class="nav__logo-text">Meridian Health</div><div class="nav__logo-sub">Clinic</div></div></a>
+    <ul class="nav__links">
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="doctors.html" class="nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a href="tel:+1234567890" class="btn btn--secondary btn--sm">Call Us</a>
+      <a href="book-appointment.html" class="btn btn--primary btn--sm">Book Appointment</a>
+      <button class="nav__menu-btn" id="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div></nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav__close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <ul class="mobile-nav__links">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+      <li><a href="doctors.html" class="mobile-nav__link">Doctors</a></li>
+      <li><a href="patient-resources.html" class="mobile-nav__link">Patient Resources</a></li>
+      <li><a href="health-tips.html" class="mobile-nav__link">Health Tips</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+      <li><a href="book-appointment.html" class="mobile-nav__link mobile-nav__link--cta">Book Appointment</a></li>
+    </ul>
+  </div>
+
+  <header class="page-hero">
+    <span class="page-hero__label">Our Team</span>
+    <h1 class="page-hero__title">Meet Our Doctors</h1>
+    <p class="page-hero__subtitle">Board-certified, deeply experienced, and genuinely caring. Find the right provider for you and book in seconds.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Doctors</span></div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- Search + filter -->
+        <div class="reveal" style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:40px;">
+          <div style="position:relative;flex:1;min-width:260px;max-width:420px;">
+            <input type="text" id="doctor-search" class="form-input" placeholder="Search by name or specialty..." style="padding-left:44px;" />
+            <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--color-muted);fill:none;" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="btn btn--primary btn--sm" data-filter="all">All</button>
+            <button class="btn btn--secondary btn--sm" data-filter="family">Family</button>
+            <button class="btn btn--secondary btn--sm" data-filter="pediatrics">Pediatrics</button>
+            <button class="btn btn--secondary btn--sm" data-filter="cardiology">Cardiology</button>
+            <button class="btn btn--secondary btn--sm" data-filter="dermatology">Dermatology</button>
+          </div>
+        </div>
+
+        <!-- Doctors grid -->
+        <div class="grid grid-4 reveal">
+
+          <div class="doctor-card" data-category="family">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-1/400/500" alt="Dr. Elena Reyes" /><span class="doctor-card__badge">Family Medicine</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Elena Reyes</div>
+              <div class="doctor-card__specialty">Family Physician</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, 12 yrs experience</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English, Spanish</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="pediatrics">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-2/400/500" alt="Dr. Marcus Lin" /><span class="doctor-card__badge">Pediatrics</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Marcus Lin</div>
+              <div class="doctor-card__specialty">Pediatrician</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, 9 yrs experience</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English, Mandarin</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="cardiology">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-3/400/500" alt="Dr. Aisha Bello" /><span class="doctor-card__badge">Cardiology</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Aisha Bello</div>
+              <div class="doctor-card__specialty">Cardiologist</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, FACC, 15 yrs</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English, French</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="dermatology">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-4/400/500" alt="Dr. James Carter" /><span class="doctor-card__badge">Dermatology</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. James Carter</div>
+              <div class="doctor-card__specialty">Dermatologist</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, 11 yrs experience</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="family">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-5/400/500" alt="Dr. Priya Nair" /><span class="doctor-card__badge">Family Medicine</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Priya Nair</div>
+              <div class="doctor-card__specialty">General Practitioner</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, 8 yrs experience</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English, Hindi</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="pediatrics">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-6/400/500" alt="Dr. Sofia Romano" /><span class="doctor-card__badge">Pediatrics</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Sofia Romano</div>
+              <div class="doctor-card__specialty">Pediatrician</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, 7 yrs experience</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English, Italian</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="cardiology">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-7/400/500" alt="Dr. Omar Haddad" /><span class="doctor-card__badge">Cardiology</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Omar Haddad</div>
+              <div class="doctor-card__specialty">Cardiologist</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, 13 yrs experience</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English, Arabic</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="dermatology">
+            <div class="doctor-card__photo-wrap"><img class="doctor-card__photo" src="https://picsum.photos/seed/doc-8/400/500" alt="Dr. Hannah Kim" /><span class="doctor-card__badge">Dermatology</span></div>
+            <div class="doctor-card__body">
+              <div class="doctor-card__name">Dr. Hannah Kim</div>
+              <div class="doctor-card__specialty">Dermatologist</div>
+              <div class="doctor-card__meta">
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>MD, 10 yrs experience</span>
+                <span><svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 100-4h14a2 2 0 100 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/></svg>English, Korean</span>
+              </div>
+              <a href="book-appointment.html" class="btn btn--primary btn--sm btn--full">Book Appointment</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--color-accent);padding:72px 0;text-align:center;">
+      <div class="container"><div class="reveal" style="max-width:620px;margin:0 auto;">
+        <h2 style="color:white;margin-bottom:16px;">Join Our Care Team</h2>
+        <p style="color:rgba(255,255,255,0.92);font-size:18px;margin-bottom:32px;">We're always looking for compassionate, talented healthcare professionals. Explore current openings.</p>
+        <a href="contact.html" class="btn btn--white btn--lg">View Careers</a>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo"><div class="footer__logo-mark">✚</div><span class="footer__logo-name">Meridian Health Clinic</span></a>
+        <p class="footer__tagline">Compassionate, modern healthcare for the whole family.</p>
+        <div class="footer__hours">
+          <div class="footer__hours-row"><span>Monday – Friday</span><span>8:00am – 8:00pm</span></div>
+          <div class="footer__hours-row"><span>Saturday</span><span>9:00am – 4:00pm</span></div>
+          <div class="footer__hours-row"><span>Sunday</span><span>Closed</span></div>
+        </div>
+      </div>
+      <div><h4 class="footer__col-title">Services</h4><ul class="footer__links">
+        <li><a href="services.html" class="footer__link">Family Medicine</a></li>
+        <li><a href="services.html" class="footer__link">Pediatrics</a></li>
+        <li><a href="services.html" class="footer__link">Cardiology</a></li>
+        <li><a href="services.html" class="footer__link">Telemedicine</a></li>
+      </ul></div>
+      <div><h4 class="footer__col-title">For Patients</h4><ul class="footer__links">
+        <li><a href="book-appointment.html" class="footer__link">Book Appointment</a></li>
+        <li><a href="patient-resources.html" class="footer__link">Patient Resources</a></li>
+        <li><a href="patient-resources.html#insurance" class="footer__link">Insurance & Billing</a></li>
+        <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+      </ul></div>
+      <div><h4 class="footer__col-title">Find Us</h4><ul class="footer__links">
+        <li><span class="footer__link" style="cursor:default;color:rgba(255,255,255,0.6);">100 Wellness Boulevard<br>Suite 200, Your City, State</span></li>
+        <li style="margin-top:8px;"><a href="tel:+1234567890" class="footer__link">+1 (234) 567-890</a></li>
+        <li><a href="mailto:hello@meridianhealth.clinic" class="footer__link">hello@meridianhealth.clinic</a></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom"><p>© 2026 Meridian Health Clinic. All rights reserved.</p><div style="display:flex;gap:16px;"><a href="#" class="footer__link" style="font-size:13px;">Privacy</a><a href="#" class="footer__link" style="font-size:13px;">Terms</a><a href="#" class="footer__link" style="font-size:13px;">HIPAA Notice</a></div></div>
+  </div></footer>
+
+  <a href="https://wa.me/[CLINIC_WHATSAPP]" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

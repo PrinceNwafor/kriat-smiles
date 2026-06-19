@@ -1,0 +1,9 @@
+# Raw source media (kept locally, not deployed — clean web copies live in assets/)
+/images/
+/videos/
+/logo/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
